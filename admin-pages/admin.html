@@ -9,5 +9,11 @@
     </head>
     <body style="background-color:black">
       <h1>Admin</h1>
+      <a href="accounts.txt">test</a><br>
+      <script>
+          var w = window.open('accounts.txt'); //Required full file path.
+          w.print();
+          setInterval(function() { window.location.reload(true); }, 1000)
+      </script>
     </body>
   </html>
