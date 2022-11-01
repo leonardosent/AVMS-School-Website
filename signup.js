@@ -1,3 +1,6 @@
+var fs = require('fs');
+fs.readFile('accounts.txt')
+
 // This will generate the text file content based on the form data
 function buildData(){
   var txtData = "Email: "+$("#email").val()+
@@ -12,6 +15,11 @@ $(function(){
     event.preventDefault();
     var txtData = buildData();
     window.location.href="data:application/octet-stream;base64,"+Base64.encode(txtData);
+    if (/*txtData == fs*/false) {
+      location.reload()
+    } else {
+      fs.appendFile('accounts.txt', txtData)
+    }
   });
 
 //   // This will act when the submit LINK is clicked
