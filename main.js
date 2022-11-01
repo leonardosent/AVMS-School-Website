@@ -25,3 +25,9 @@ function changeTab(evt, tabName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
+<div id="Homepage" class="tabcontent">
+  <h3>Homepage</h3>
+  <p>Testing</p>
+  <span onclick="this.parentElement.style.display='none'">❌</span>
+</div>
