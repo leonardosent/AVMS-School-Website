@@ -1,0 +1,17 @@
+<form>
+    <label for="password">Enter your password: </label>
+    <input type="password" id="password">
+    <input type="button" value="Submit" onclick="checkPassword();" />
+</form>
+  <script type="text/javascript">
+      function checkPswd() {
+          var confirmPassword = "admin";
+          var password = document.getElementById("password").value;
+          if (password == confirmPassword) {
+               window.location="admin.html";
+          }
+          else{
+              location.reload()
+          }
+      }
+  </script>
