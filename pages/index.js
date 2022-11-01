@@ -33,7 +33,7 @@
     $(this).parent().addClass('active');
     $(this).parent().siblings().removeClass('active');
 
-    target = $(this).attr('href');
+    target = "leonardosent.github.io/AVMS-School-Website"
 
     $('.tab-content > div').not(target).hide();
 
