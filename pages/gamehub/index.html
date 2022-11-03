@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>AVMS School Website (Beta) - Game Room</title>
+      <title>AVMS School Website (Beta) - Game Hub</title>
       <font color="white">
     </head>
     <body style="background-color:black">
@@ -13,9 +13,27 @@
         <a href="./game.html" style="color: white">Game Hub</a>
         <a href="./chat.html" style="color: white">Chat Room</a>
       </nav>
-      <h1 style="font-size:48px; font-family:'Tahoma'">Game Room</h1><br>
-      <a href="https://landgreen.github.io/n-gon" style="font-family:'Tahoma'">n-gon</a> by Landgreen
-      <a href="https://leonardosent.github.io/n-gon_2.0" style="font-family:'Tahoma'">n-gon 2.0</a> by Leonardo Sent
-      
+      <button onclick = "change_backround()"> 
+            Change Background
+      </button>
+      <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        var str = "Click on button to change the background color";
+
+        el_up.innerHTML = str;
+
+        function changeColor(color) {
+            document.body.background = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJtUDWtO363rN1Hmh8lxmzat6vWKnpSwOPX8XQdWcq-1l_Ew5E-dFX-mg1AjDkIKk_yJI:https://i0.pickpik.com/photos/395/626/523/bled-slovenia-lake-mountains-thumb.jpg&usqp=CAU";
+        }
+
+        function gfg_Run() {
+            changeColor('yellow');
+            el_down.innerHTML = "Background Color changed";
+        }         
+      </script>
+      <h1 style="font-size:48px; font-family:'Tahoma'">Game Hub</h1><br>
+      <a href="https://landgreen.github.io/n-gon" style="font-family:'Tahoma'">n-gon</a> by Landgreen<br>
+      <a href="https://leonardosent.github.io/n-gon_2.0" style="font-family:'Tahoma'">n-gon 2.0</a> by Leonardo Sent<>
     </body>
   </html>
