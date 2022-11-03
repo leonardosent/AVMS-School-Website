@@ -7,29 +7,22 @@
       <title>AVMS School Website (Beta) - Game Hub</title>
       <font color="white">
     </head>
-    <body style="background-color:black">
+    <body style="background-color:black" id="background">
       <nav>
-        <a href="https://leonardosent.github.io/AVMS-School-Website/homepage" style="color: white">Homepage</a>
-        <a href="https://leonardosent.github.io/AVMS-School-Website/gamehub" style="color: white">Game Hub</a>
-        <a href="https://leonardosent.github.io/AVMS-School-Website/chatroom" style="color: white">Chat Room</a>
+        <a href="https://leonardosent.github.io/AVMS-School-Website/homepage" style="color: white; font-family:'Tahoma'">Homepage</a>
+        <a href="https://leonardosent.github.io/AVMS-School-Website/gamehub" style="color: white; font-family:'Tahoma">Game Hub</a>
+        <a href="https://leonardosent.github.io/AVMS-School-Website/chatroom" style="color: white; font-family:'Tahoma">Chat Room</a>
       </nav>
       <button onclick = "change_backround()"> 
             Change Background
       </button>
       <script>
-        var el_up = document.getElementById("GFG_UP");
-        var el_down = document.getElementById("GFG_DOWN");
-        var str = "Click on button to change the background color";
-
-        el_up.innerHTML = str;
-
         function changeColor(color) {
             document.body.style.background = color;
         }
 
         function change_background() {
-            changeColor('yellow');
-            el_down.innerHTML = "Background Color changed";
+            changeColor('orange');
         }         
       </script>
       <h1 style="font-size:48px; font-family:'Tahoma'">Game Hub</h1><br>
