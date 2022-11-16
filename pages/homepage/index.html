@@ -27,10 +27,14 @@
       <div style="position : fixed; padding: 5px 0 0 5px; height: 140px; width: 150px;">
         <p style="font-size:36px; font-family:'Tahoma' text-align: right"><span id="time"> </span></h1>
         <script>
-          `use strict`
-          var datetime = new Date();
-          console.log(datetime);
-          document.getElementById("time").textContent = datetime;
+          while (true) {
+            `use strict`
+            var datetime = new Date();
+            console.log(datetime);
+            document.getElementById("time").textContent = datetime;
+            
+            wait() //VERY IMPORTANT. DO NOT GET RID OF.
+          }
         </script>
       </div>
     </body>
