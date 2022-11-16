@@ -27,20 +27,10 @@
       <div style="position : fixed; padding: 5px 0 0 5px; height: 140px; width: 150px;">
         <p style="font-size:36px; font-family:'Tahoma' text-align: right"><span id="time"> </span></h1>
         <script>
-          while (true) {
-            `use strict`
-            var datetime = new Date();
-            console.log(datetime);
-            document.getElementById("time").textContent = datetime;
-            
-            `use strict`;
-            function refreshTime() {
-              const timeDisplay = document.getElementById("time");
-              const dateString = new Date().toLocaleString();
-              const formattedString = dateString.replace(", ", " - ");
-              timeDisplay.textContent = formattedString;
-            }
-            setInterval(refreshTime, 1000);
+          `use strict`
+          var datetime = new Date().toLocaleTimeString();
+          console.log(datetime); // it will represent date in the console of developers tool
+          document.getElementById("time").textContent = datetime; // represent on html page
         </script>
       </div>
     </body>
